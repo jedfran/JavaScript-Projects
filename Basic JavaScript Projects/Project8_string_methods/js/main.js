@@ -54,6 +54,6 @@ function fixed_func() {
 //valueOf() method
 function valueof_func(){
     var sentence = "Hello";
-    document.getElementById("value").innerHTML = sentence.valueOf();
+    document.getElementById("value").innerHTML = sentence.valueOf(); // returns the primivite value of the string
 }
 // -------------------------------------------------------------------- //

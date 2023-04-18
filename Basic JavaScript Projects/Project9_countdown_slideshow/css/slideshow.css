@@ -1,0 +1,74 @@
+*{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 700px;
+    position:absolute;
+    margin:0 auto;
+}
+
+/* Next and Previous Buttons */
+
+.prev, .next {
+    position:absolute;
+    top: 50%;
+    width: auto;
+    color: rgba(175, 41, 41, 0.844);
+    font-weight: bold;
+    margin-top: -22px;
+    padding: 12px;
+    font-size: 20px;
+    transition: 1s ease;
+    user-select:none;
+    cursor: pointer;
+}
+
+
+/* Next Button to the Right */
+.next {
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+/* Prev Buttton Border Radius */
+.prev {
+    border-radius: 0 6px 6px 0;
+}
+
+/* Prev and Next: HOVER */
+.prev:hover, .next:hover {
+    background-color: rgba(165, 42, 42, 0.344);
+}
+
+/* Caption TEXT */
+.text {
+    color: rgb(188, 5, 5);
+    font-weight: bold;
+    font-size:15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 7px  black;
+}
+
+/* Number TEXT */
+.number {
+    color:white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top:0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+  }
+
+  @keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
