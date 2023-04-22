@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Function</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- JavaScript -->
+
+        <p id="reg_func" onclick="myFunction()">Click Me</p>
+        <p id="demo"></p>
+
+        <script>
+            // Regular Function
+            function myFunction() {
+                alert("Hello World")
+            }
+
+            // Arrow Function
+            var car;
+            car = (val) => "These are my favourite car: " + val;
+            document.getElementById("demo").innerHTML = car("Honda");
+        </script>
+
+    </body>
+</html>
