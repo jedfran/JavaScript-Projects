@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JSON Challenges</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <div id="myInfo"></div>
+
+        <div id="myPet"></div>
+
+        <div id="myAnimal"></div>
+
+        <script>
+            // JSON.strinify() method
+            var me = {"Name":"Jedo", "Age":"20", "City":"Winnipeg"}; 
+            var JSONstring1 = JSON.stringify(me);
+
+            document.getElementById('myInfo').innerHTML = JSONstring1;
+
+            // JSON.parse() method
+            var dog = '{"Name":"Casper", "Age":"2", "Gender": "Male"}' //NOTE!! the qoutes enclosing the whole list to make it a list
+            var JSONstring2 = JSON.parse(dog);
+
+            document.getElementById('myPet').innerHTML = JSONstring2.Name + " is a " + JSONstring2.Age + " year old " + JSONstring2.Gender + " dog!" 
+
+            // localStorage() method
+            // sets data as a KVP to be saved in your browser locally
+            localStorage.setItem("Animal", "Elephant");
+            // Uses key "Animal" to return value of "Elephant"
+            document.getElementById('myAnimal').innerHTML = localStorage.getItem('Animal');
+        </script>
+
+    </body>
+</html>

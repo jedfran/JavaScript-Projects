@@ -103,3 +103,12 @@ function break_func() {
 }
 
 // -------------------------------------------------------------- //
+
+// Now we just need to remove the fade-out class from the body once the page is loaded.
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove ('fade-out');
+});
+
+
+// -------------------------------------------------------------- //

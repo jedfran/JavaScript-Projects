@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="XML_1"></p>
+
+        <!-- JavaScript / XML -->
+        <script>
+            var XML_Parser, XML_Document;
+
+            // String
+            var movie = "<movie>" +
+                "<title>Sonic the Hedgehog</title>" +
+                "<year>2020</year>" +
+                "<genre>Comedy/Adventure</genre>" +
+                "/movie>";
+ 
+            // XML DOM parser
+            XML_Parser = new DOMParser();
+
+            // new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(movie, "text/xml");
+
+            // Executing
+            document.getElementById("XML_1").innerHTML = XML_Document.getElementsByTagName("genre")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+/* FORM */
+.form-popup {
+    display: none;
+    position: inherit;
+    z-index: 9;
+}
+
+/* FORM BUTTON */
+.form_btn {
+    color:rgb(0, 0, 0);
+    background-color: rgb(206, 34, 34);
+    width: 20vw;
+    height: 10vw;
+    display: block;
+    font-size: 5vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+    border-radius: 20px;
+    border: solid black 4px;
+}
+
+/* FORM BUTTON HOVER */
+.form_btn:hover {
+    cursor: pointer;
+    background-color: rgb(107, 11, 11) ;
+    color:white;
+}
+
+/* Add styles to the form container */
+.form-container {
+    margin:0 auto;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  /* Full-width input fields */
+.form-container input[type=text] {
+    width:90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #33a62b;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Add a red background color to the cancel button */
+.form-container .close {
+    background-color: red;
+  }
+
+  /* ANIMATION */
+  .form_btn {
+    position:relative;
+    animation: mymove 1s;
+  }
+  @keyframes mymove {
+    from {top: -10vw;}
+    to {top: 0px;}
+  }
+
+  /* PHOTO CONTAINER */
+  .photo-container {
+    width: 300px;
+    height: 160px;
+    position: relative;
+  }
+  
+  img {
+    width: 90%;
+    padding: 10px;
+    padding-left: 13px;
+    margin: 0 auto;
+  }
+
+  .photo-container:hover {
+    background-color: rgba(128, 0, 128, 0.441);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /* ZOOM IN AND OUT Feature */
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1,1);
+    }
+    50% {
+      transform: scale(1.2,1.2);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+  }
+  
+  .photo-container img {
+    animation: zoom-in-zoom-out 6s ease infinite;
+  }
+
+  /* SLIDESHOW */
+  #slideshow {
+    margin: 20px auto;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  #slideshow img {
+    height: 330px;
+    width: 330px;
+  }
+
+  /* STICKY BUTTON */
+  .sticky_btn {
+    width: 80px;
+    height: 40px;
+    position: sticky;
+    background-color: #33a62b;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    float:right;
+  }

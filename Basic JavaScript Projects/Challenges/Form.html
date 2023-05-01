@@ -1,0 +1,51 @@
+<!-- Making a Form with a Phone number field
+and when someone doesn't fill one of the input elements
+alert them -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Challenge</title>
+        <meta chartset="UTF-8">
+        <script src="./js/form.js" defer></script>
+        <link rel="stylesheet" href="./css/form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <button class="form_btn" onclick="form_popup()">FORM</button>
+        
+        <div class="form-popup" id="myForm">
+            <form class="form-container"  name="form" action="" method="post" onsubmit="validateForm()">
+                <input name="fname" type="text" placeholder="First Name"><br>
+                <input name="lname" type="text" placeholder="Last Name"><br>
+                <input name="pnumber" type="text" placeholder="Phone Number"><br>
+
+                <!-- Sumbit Button -->
+                <button class="btn open" type="submit" name="Submit">Submit</button>
+                <!-- Close Button -->
+                <button class="btn close" onclick=closeForm() name="Close">Close</button>
+            </form>
+        </div>
+
+        <!-- Zoom in and Out Picture -->
+        <div class="photo-container">
+            <img class="zoom-in-out"src="./img/form.jpg" alt="">
+            
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow" id="slideshow">
+            <div>
+                <img src="./img/dog_playing.jpg" alt="">
+            </div>
+            <div>
+                <img class="cat" src="./img/gallery_cat_1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- STICKY BUTTON  -->
+        <button class="sticky_btn" onclick="form_popup()">Click Me!</button>
+    </body>
+
+</html>

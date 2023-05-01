@@ -3,9 +3,18 @@
     <head>
         <title>Project 10</title>
         <meta charset="UTF-8">
+        
         <script src="./js/main.js" defer></script>
+
+        <!-- If JavaScript is disabled, the page will still load but the fade effect will not occur. -->
+        <link rel="stylesheet" type="text/css" href="../CSS/Project10_CSS.css">
     </head>
     <body>
+
+         <!-- Fading-OUt Challenge, Now we need to add the fade-out class to the body as soon as the page loads. -->
+         <script>
+            document.body.classList.add('fade-out');
+        </script>
         <!-- While Loop -->
         <p id="while_loop"></p>
         <button onclick="whileloop_func()">Click for a while loop!</button>
@@ -26,7 +35,7 @@
         <button onclick="constant_func()">Click for constant</button>
 
         <!-- let Keyword -->
-        <p id="let_keyword" onclick="keyword_func()">Click Me</p>
+        <p id="let_keyword" onclick="keyword_func()" style="font-size:2vw;">Click Me</p>
         
         <!-- Return Statement -->
         <p id="pi"> </p>

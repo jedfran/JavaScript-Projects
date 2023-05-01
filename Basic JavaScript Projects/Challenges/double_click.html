@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Double Click</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p ondblclick="doubleclick_func()" id="dbclick">Double click, for me to change!</p>
+
+        <script>
+
+            function doubleclick_func() {
+                document.getElementById('dbclick').innerHTML = "I told you so!"
+            }
+
+        </script>
+    </body>
+</html>

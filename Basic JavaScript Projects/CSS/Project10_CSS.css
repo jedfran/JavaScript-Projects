@@ -1,0 +1,19 @@
+/* This trick works by adding the fade-out class to your body with a script, 
+then removing it when the page is done loading. 
+ The fade effect is handled completely with CSS. 
+ We're only using JavaScript to add/remove the class, 
+ which will ensure the page still displays if scripts are disabled. */
+
+ body {
+    opacity: 1; /*Makes the body appear, if set to 0 body will be invisible*/
+    transition: 2s opacity;
+ }
+
+ body.fade-out { /*fade-out is DOM element made in the JavaScript*/
+    opacity: 0;
+    transition: none;
+ }
+
+ html {
+    background-color: white;
+ }
